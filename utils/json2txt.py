@@ -12,3 +12,5 @@ with open(filename, "r") as f:
 
 for key, value in data.items():
     print(f"{key}: {value}")
+
+#Test
