@@ -1,0 +1,1 @@
+print("You have launched the password strength checker!")
