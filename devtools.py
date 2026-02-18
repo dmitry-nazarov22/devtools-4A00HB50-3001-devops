@@ -1,5 +1,6 @@
 import sys
 import utils.password_generator as pg
+import utils.json2txt as js
 
 def switch(params):
     if len(params) > 1:
@@ -7,6 +8,8 @@ def switch(params):
             print("Hello World!")
         elif params[1] == "--passwordgenerator" or "-pg":
             pg.main()
+        elif params[1] == "--jsonconverter" or "-js":
+            js.main()
         elif params[1] == "--pswdchk":
             return "password check call here!"
         else:
