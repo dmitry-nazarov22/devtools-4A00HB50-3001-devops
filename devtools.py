@@ -7,6 +7,8 @@ def switch(params):
             print("Hello World!")
         elif params[1] == "--passwordgenerator" or "-pg":
             pg.main()
+        elif params[1] == "--pswdchk":
+            return "password check call here!"
         else:
             print("Please input a valid command.")
     else:
