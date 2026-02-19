@@ -12,6 +12,9 @@ def main():
 
     if len(password) < 6:
         print(f'Password is really short')
+    else:
+        print(f'Looks ok length')
 
 
 # pswd_strength_checker
+
