@@ -13,5 +13,7 @@ def main():
 # check length
     if len(password) < 6:
         print(f'Password is really short')
+    else:
+        print(f'Seems like an ok length for password')
 
 
