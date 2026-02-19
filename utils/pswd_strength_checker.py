@@ -8,3 +8,8 @@ def main():
 
     if password in badPasswords:
         print(f'Password is very common!')
+
+    if len(password) < 6:
+        print(f'Password is really short')
+
+
