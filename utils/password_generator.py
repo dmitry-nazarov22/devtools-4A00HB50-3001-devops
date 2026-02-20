@@ -1,5 +1,6 @@
 import random
 import string
+from utils.printFile import printFile
 
 length = 12
 
@@ -32,11 +33,6 @@ def checkParams(param):
 
     else:
         "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
-
-def printFile(path):
-    with open(path, 'r') as file:
-        for line in file:
-            print(line)
 
 def main(params):
     for param in params:
