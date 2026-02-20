@@ -9,7 +9,7 @@ nodigits = False
 nosymbols = False
 
 def checkParams(param):
-    global nolowercase, nouppercase, nodigits, nosymbols
+    global length, nolowercase, nouppercase, nodigits, nosymbols
 
     if param == "--help" or param == "-h":
         printFile("utils/docs/pg_help.txt")
@@ -22,6 +22,10 @@ def checkParams(param):
         nodigits = True
     elif param == "--nosymbols" or param == "-ns":
         nosymbols = True
+
+    elif param.startswith("--length=") or param.startswith("-l="):
+        length = int(param.split("=")[1])
+
     else:
         "Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help"
 
