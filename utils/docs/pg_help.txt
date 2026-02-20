@@ -10,9 +10,12 @@ Options:
 --noupper   | -nu                   –      Exclude uppercase characters
 --nodigits  | -nd                   –      Exclude digits
 --nosymbols | -ns                   –      Exclude symbols
+--length=<value> | -l=<value>       –      Add custom length for the password
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Combining options example:
 -pg -nl -nd -ns
+Custom length setting example:
+--length=25
 ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 Help:
 --Help                              –     Display utils/docs/pg_help.txt
