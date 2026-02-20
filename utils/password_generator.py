@@ -31,6 +31,9 @@ def checkParams(param):
             print("Invalid length value.")
             exit()
 
+    elif param == "-pg" or param == "--passwordgenerator" or param == "devtools.py":
+        return
+
     else:
         print("Invalid extension. For all accessible extensions check: '-pg -h' or --passwordgenerator --help")
         exit(1)
