@@ -10,7 +10,11 @@ nosymbols = False
 
 def checkParams(param):
     global nolowercase, nouppercase, nodigits, nosymbols
-    if param == "--nolower" or param == "-nl":
+
+    if param == "--help" or param == "-h":
+        printFile("utils/docs/pg_help.txt")
+        exit()
+    elif param == "--nolower" or param == "-nl":
         nolowercase = True
     elif param == "--noupper" or param == "-nu":
         nouppercase = True
